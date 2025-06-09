@@ -46,37 +46,21 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Neural Network Background */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="grid grid-cols-12 gap-4 h-full">
-          {Array.from({ length: 48 }).map((_, i) => (
-            <div
-              key={i}
-              className={`w-2 h-2 rounded-full bg-primary animate-neural-pulse`}
-              style={{
-                animationDelay: `${i * 0.1}s`,
-                animationDuration: `${3 + (i % 3)}s`
-              }}
-            />
-          ))}
-        </div>
-      </div>
-
       {/* Floating Geometric Shapes */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-20 h-20 border-2 border-primary/30 rotate-45 animate-float" />
-        <div className="absolute top-40 right-20 w-16 h-16 border-2 border-secondary/30 rounded-full animate-float" style={{ animationDelay: '2s' }} />
-        <div className="absolute bottom-40 left-20 w-12 h-12 bg-accent/20 animate-float" style={{ animationDelay: '4s' }} />
-        <div className="absolute bottom-20 right-10 w-24 h-24 border-2 border-neon-cyan/30 rotate-12 animate-float" style={{ animationDelay: '1s' }} />
+      <div className="absolute inset-0 pointer-events-none opacity-20">
+        <div className="absolute top-20 left-10 w-16 h-16 border border-primary/20 rounded-lg animate-float" />
+        <div className="absolute top-40 right-20 w-12 h-12 border border-secondary/20 rounded-full animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-40 left-20 w-8 h-8 bg-accent/10 rounded-lg animate-float" style={{ animationDelay: '4s' }} />
+        <div className="absolute bottom-20 right-10 w-20 h-20 border border-pastel-purple/20 rounded-full animate-float" style={{ animationDelay: '1s' }} />
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
           <div className="mb-8 animate-fade-in-up">
-            <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-primary to-secondary p-1 animate-glow">
+            <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-primary to-secondary p-1 animate-soft-glow">
               <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
-                <div className="w-44 h-44 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-6xl font-bold text-primary">
+                <div className="w-44 h-44 rounded-full bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-6xl font-bold text-primary">
                   MD
                 </div>
               </div>
@@ -102,20 +86,20 @@ const HeroSection = () => {
 
           {/* Achievement Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 animate-fade-in-up">
-            <div className="glassmorphism p-4 rounded-lg hover-glow">
+            <div className="glass-card p-4 rounded-lg hover-lift">
               <div className="text-2xl font-bold text-primary">9.12</div>
               <div className="text-sm text-muted-foreground">CGPA</div>
             </div>
-            <div className="glassmorphism p-4 rounded-lg hover-glow">
+            <div className="glass-card p-4 rounded-lg hover-lift">
               <div className="text-2xl font-bold text-secondary">10+</div>
               <div className="text-sm text-muted-foreground">Projects</div>
             </div>
-            <div className="glassmorphism p-4 rounded-lg hover-glow">
+            <div className="glass-card p-4 rounded-lg hover-lift">
               <div className="text-2xl font-bold text-accent">4</div>
               <div className="text-sm text-muted-foreground">Internships</div>
             </div>
-            <div className="glassmorphism p-4 rounded-lg hover-glow">
-              <div className="text-2xl font-bold text-neon-cyan">15+</div>
+            <div className="glass-card p-4 rounded-lg hover-lift">
+              <div className="text-2xl font-bold text-pastel-green">15+</div>
               <div className="text-sm text-muted-foreground">Technologies</div>
             </div>
           </div>
@@ -130,7 +114,7 @@ const HeroSection = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="glow-border hover-glow px-8 py-3"
+              className="subtle-border hover-lift px-8 py-3"
             >
               <Download className="mr-2" size={16} />
               Download Resume
@@ -138,7 +122,7 @@ const HeroSection = () => {
             <Button 
               onClick={scrollToContact}
               variant="outline" 
-              className="glow-border hover-glow px-8 py-3"
+              className="subtle-border hover-lift px-8 py-3"
             >
               Contact Me
             </Button>
@@ -148,7 +132,7 @@ const HeroSection = () => {
           <div className="flex justify-center space-x-6 animate-fade-in-up">
             <a 
               href="https://github.com" 
-              className="text-muted-foreground hover:text-primary transition-colors hover-glow p-2"
+              className="text-muted-foreground hover:text-primary transition-colors p-2"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -156,7 +140,7 @@ const HeroSection = () => {
             </a>
             <a 
               href="https://linkedin.com/in/meenit11" 
-              className="text-muted-foreground hover:text-primary transition-colors hover-glow p-2"
+              className="text-muted-foreground hover:text-primary transition-colors p-2"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -164,7 +148,7 @@ const HeroSection = () => {
             </a>
             <a 
               href="mailto:doshimeenit110503@gmail.com" 
-              className="text-muted-foreground hover:text-primary transition-colors hover-glow p-2"
+              className="text-muted-foreground hover:text-primary transition-colors p-2"
             >
               <Mail size={24} />
             </a>
@@ -177,7 +161,7 @@ const HeroSection = () => {
               <span className="text-primary"> Machine Learning</span>, 
               <span className="text-secondary"> Full Stack Development</span>, and 
               <span className="text-accent"> mobile app development</span>. 
-              Demonstrated ability to deliver impactful AI/ML projects with <span className="text-neon-cyan">95%+ accuracy</span>.
+              Demonstrated ability to deliver impactful AI/ML projects with <span className="text-pastel-green">95%+ accuracy</span>.
             </p>
           </div>
         </div>

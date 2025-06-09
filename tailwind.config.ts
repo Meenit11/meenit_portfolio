@@ -62,13 +62,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// AI/ML Theme Colors
-				neon: {
-					cyan: 'hsl(var(--neon-cyan))',
-					purple: 'hsl(var(--neon-purple))',
-					blue: 'hsl(var(--electric-blue))',
-					green: 'hsl(var(--neural-green))',
-					matrix: 'hsl(var(--matrix-green))'
+				// Modern Pastel Colors
+				pastel: {
+					rose: 'hsl(var(--pastel-rose))',
+					blue: 'hsl(var(--pastel-blue))',
+					green: 'hsl(var(--pastel-green))',
+					purple: 'hsl(var(--pastel-purple))',
+					yellow: 'hsl(var(--pastel-yellow))'
 				}
 			},
 			borderRadius: {
@@ -101,13 +101,13 @@ export default {
 					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--primary) / 0.5)' },
 					'50%': { boxShadow: '0 0 40px hsl(var(--primary) / 0.8), 0 0 60px hsl(var(--secondary) / 0.3)' }
 				},
-				'pulse-neon': {
-					'0%, 100%': { textShadow: '0 0 10px hsl(var(--primary)), 0 0 20px hsl(var(--primary)), 0 0 30px hsl(var(--primary))' },
-					'50%': { textShadow: '0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary)), 0 0 15px hsl(var(--primary))' }
+				'soft-glow': {
+					'0%, 100%': { boxShadow: '0 4px 20px hsl(var(--primary) / 0.15)' },
+					'50%': { boxShadow: '0 8px 25px hsl(var(--primary) / 0.25)' }
 				},
-				'neural-pulse': {
-					'0%, 100%': { opacity: '0.3', transform: 'scale(1)' },
-					'50%': { opacity: '1', transform: 'scale(1.1)' }
+				'subtle-pulse': {
+					'0%, 100%': { opacity: '0.7' },
+					'50%': { opacity: '1' }
 				},
 				'slide-in-left': {
 					'0%': { transform: 'translateX(-100px)', opacity: '0' },
@@ -126,9 +126,8 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				float: 'float 6s ease-in-out infinite',
-				glow: 'glow 2s ease-in-out infinite alternate',
-				'pulse-neon': 'pulse-neon 2s ease-in-out infinite',
-				'neural-pulse': 'neural-pulse 3s ease-in-out infinite',
+				'soft-glow': 'soft-glow 3s ease-in-out infinite',
+				'subtle-pulse': 'subtle-pulse 2s ease-in-out infinite',
 				'slide-in-left': 'slide-in-left 0.8s ease-out forwards',
 				'slide-in-right': 'slide-in-right 0.8s ease-out forwards',
 				'fade-in-up': 'fade-in-up 0.8s ease-out forwards'
