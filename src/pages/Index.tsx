@@ -68,7 +68,7 @@ const Index = () => {
           <div className="mt-6 pt-6 border-t border-border/30 text-center">
             <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
               <span className="flex items-center">
-                <div className="w-2 h-2 bg-vibrant-teal rounded-full mr-2 animate-subtle-pulse" />
+                <div className="w-2 h-2 bg-neutral-sage rounded-full mr-2 animate-subtle-pulse" />
                 Available for opportunities
               </span>
               <span className="flex items-center">
@@ -76,11 +76,11 @@ const Index = () => {
                 AI/ML Engineer
               </span>
               <span className="flex items-center">
-                <div className="w-2 h-2 bg-vibrant-orange rounded-full mr-2 animate-subtle-pulse" />
+                <div className="w-2 h-2 bg-secondary rounded-full mr-2 animate-subtle-pulse" />
                 Full Stack Developer
               </span>
               <span className="flex items-center">
-                <div className="w-2 h-2 bg-vibrant-purple rounded-full mr-2 animate-subtle-pulse" />
+                <div className="w-2 h-2 bg-accent rounded-full mr-2 animate-subtle-pulse" />
                 Data Analyst
               </span>
             </div>

@@ -62,14 +62,6 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Modern Vibrant Colors
-				vibrant: {
-					orange: 'hsl(var(--vibrant-orange))',
-					purple: 'hsl(var(--vibrant-purple))',
-					teal: 'hsl(var(--vibrant-teal))',
-					red: 'hsl(var(--vibrant-red))',
-					yellow: 'hsl(var(--vibrant-yellow))'
-				},
 				// Modern Neutral Colors
 				neutral: {
 					stone: 'hsl(var(--neutral-stone))',
