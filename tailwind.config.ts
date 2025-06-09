@@ -62,13 +62,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Modern Pastel Colors
-				pastel: {
-					rose: 'hsl(var(--pastel-rose))',
-					blue: 'hsl(var(--pastel-blue))',
-					green: 'hsl(var(--pastel-green))',
-					purple: 'hsl(var(--pastel-purple))',
-					yellow: 'hsl(var(--pastel-yellow))'
+				// Modern Neutral Colors
+				neutral: {
+					stone: 'hsl(var(--neutral-stone))',
+					slate: 'hsl(var(--neutral-slate))',
+					sage: 'hsl(var(--neutral-sage))',
+					warm: 'hsl(var(--neutral-warm))',
+					cool: 'hsl(var(--neutral-cool))'
 				}
 			},
 			borderRadius: {

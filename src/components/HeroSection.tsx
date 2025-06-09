@@ -51,7 +51,7 @@ const HeroSection = () => {
         <div className="absolute top-20 left-10 w-16 h-16 border border-primary/20 rounded-lg animate-float" />
         <div className="absolute top-40 right-20 w-12 h-12 border border-secondary/20 rounded-full animate-float" style={{ animationDelay: '2s' }} />
         <div className="absolute bottom-40 left-20 w-8 h-8 bg-accent/10 rounded-lg animate-float" style={{ animationDelay: '4s' }} />
-        <div className="absolute bottom-20 right-10 w-20 h-20 border border-pastel-purple/20 rounded-full animate-float" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-20 right-10 w-20 h-20 border border-neutral-sage/20 rounded-full animate-float" style={{ animationDelay: '1s' }} />
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
@@ -99,7 +99,7 @@ const HeroSection = () => {
               <div className="text-sm text-muted-foreground">Internships</div>
             </div>
             <div className="glass-card p-4 rounded-lg hover-lift">
-              <div className="text-2xl font-bold text-pastel-green">15+</div>
+              <div className="text-2xl font-bold text-neutral-sage">15+</div>
               <div className="text-sm text-muted-foreground">Technologies</div>
             </div>
           </div>
@@ -161,7 +161,7 @@ const HeroSection = () => {
               <span className="text-primary"> Machine Learning</span>, 
               <span className="text-secondary"> Full Stack Development</span>, and 
               <span className="text-accent"> mobile app development</span>. 
-              Demonstrated ability to deliver impactful AI/ML projects with <span className="text-pastel-green">95%+ accuracy</span>.
+              Demonstrated ability to deliver impactful AI/ML projects with <span className="text-neutral-sage">95%+ accuracy</span>.
             </p>
           </div>
         </div>

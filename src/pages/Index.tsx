@@ -68,7 +68,7 @@ const Index = () => {
           <div className="mt-6 pt-6 border-t border-border/30 text-center">
             <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
               <span className="flex items-center">
-                <div className="w-2 h-2 bg-pastel-green rounded-full mr-2 animate-subtle-pulse" />
+                <div className="w-2 h-2 bg-neutral-sage rounded-full mr-2 animate-subtle-pulse" />
                 Available for opportunities
               </span>
               <span className="flex items-center">
