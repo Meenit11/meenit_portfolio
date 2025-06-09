@@ -86,20 +86,20 @@ const HeroSection = () => {
 
           {/* Achievement Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 animate-fade-in-up">
-            <div className="glass-card p-4 rounded-lg hover-lift">
+            <div className="glass-card p-4 rounded-lg hover-lift border-l-4 border-primary">
               <div className="text-2xl font-bold text-primary">9.12</div>
               <div className="text-sm text-muted-foreground">CGPA</div>
             </div>
-            <div className="glass-card p-4 rounded-lg hover-lift">
-              <div className="text-2xl font-bold text-secondary">10+</div>
+            <div className="glass-card p-4 rounded-lg hover-lift border-l-4 border-vibrant-teal">
+              <div className="text-2xl font-bold text-vibrant-teal">10+</div>
               <div className="text-sm text-muted-foreground">Projects</div>
             </div>
-            <div className="glass-card p-4 rounded-lg hover-lift">
-              <div className="text-2xl font-bold text-accent">4</div>
+            <div className="glass-card p-4 rounded-lg hover-lift border-l-4 border-vibrant-orange">
+              <div className="text-2xl font-bold text-vibrant-orange">4</div>
               <div className="text-sm text-muted-foreground">Internships</div>
             </div>
-            <div className="glass-card p-4 rounded-lg hover-lift">
-              <div className="text-2xl font-bold text-neutral-sage">15+</div>
+            <div className="glass-card p-4 rounded-lg hover-lift border-l-4 border-vibrant-purple">
+              <div className="text-2xl font-bold text-vibrant-purple">15+</div>
               <div className="text-sm text-muted-foreground">Technologies</div>
             </div>
           </div>
