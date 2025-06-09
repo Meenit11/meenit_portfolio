@@ -1,22 +1,18 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-
 const AboutSection = () => {
-  const languages = [
-    { name: 'English', level: 'Fluent' },
-    { name: 'Hindi', level: 'Native' },
-    { name: 'Gujarati', level: 'Native' }
-  ];
-
-  const certifications = [
-    'Core Python - Udemy',
-    'Mobile App Development - AppBirds',
-    'Data Analysis - Mass Finance',
-    'IoT Development - Acmegrade'
-  ];
-
-  return (
-    <section id="about" className="py-20 relative">
+  const languages = [{
+    name: 'English',
+    level: 'Fluent'
+  }, {
+    name: 'Hindi',
+    level: 'Native'
+  }, {
+    name: 'Gujarati',
+    level: 'Native'
+  }];
+  const certifications = ['Core Python - Udemy', 'Mobile App Development - AppBirds', 'Data Analysis - Mass Finance', 'IoT Development - Acmegrade'];
+  return <section id="about" className="py-20 relative">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-32 h-32 border border-primary rounded-full animate-neural-pulse" />
@@ -54,7 +50,7 @@ const AboutSection = () => {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Status:</span>
-                  <Badge className="bg-neon-green/20 text-neon-green border-neon-green/30">
+                  <Badge className="bg-neon-green/20 text-neon-green border-neon-green/30 bg-lime-300">
                     Available for Opportunities
                   </Badge>
                 </div>
@@ -63,12 +59,10 @@ const AboutSection = () => {
               <div className="mb-8">
                 <h4 className="text-lg font-semibold text-secondary mb-4">Languages</h4>
                 <div className="grid grid-cols-3 gap-3">
-                  {languages.map((lang, index) => (
-                    <div key={index} className="text-center">
+                  {languages.map((lang, index) => <div key={index} className="text-center">
                       <div className="text-sm font-medium text-foreground">{lang.name}</div>
                       <div className="text-xs text-muted-foreground">{lang.level}</div>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </div>
 
@@ -135,15 +129,10 @@ const AboutSection = () => {
                   <h3 className="text-2xl font-bold text-secondary mb-6">Certifications</h3>
                   
                   <div className="grid gap-3">
-                    {certifications.map((cert, index) => (
-                      <div 
-                        key={index}
-                        className="flex items-center p-3 bg-muted/10 rounded-lg border border-border/30 hover:border-primary/30 transition-colors"
-                      >
+                    {certifications.map((cert, index) => <div key={index} className="flex items-center p-3 bg-muted/10 rounded-lg border border-border/30 hover:border-primary/30 transition-colors">
                         <div className="w-2 h-2 bg-primary rounded-full mr-3 animate-neural-pulse" />
                         <span className="text-foreground">{cert}</span>
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
                 </CardContent>
               </Card>
@@ -168,8 +157,6 @@ const AboutSection = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
