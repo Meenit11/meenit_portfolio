@@ -61,6 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// AI/ML Theme Colors
+				neon: {
+					cyan: 'hsl(var(--neon-cyan))',
+					purple: 'hsl(var(--neon-purple))',
+					blue: 'hsl(var(--electric-blue))',
+					green: 'hsl(var(--neural-green))',
+					matrix: 'hsl(var(--matrix-green))'
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,46 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				float: {
+					'0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+					'50%': { transform: 'translateY(-20px) rotate(180deg)' }
+				},
+				glow: {
+					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--primary) / 0.5)' },
+					'50%': { boxShadow: '0 0 40px hsl(var(--primary) / 0.8), 0 0 60px hsl(var(--secondary) / 0.3)' }
+				},
+				'pulse-neon': {
+					'0%, 100%': { textShadow: '0 0 10px hsl(var(--primary)), 0 0 20px hsl(var(--primary)), 0 0 30px hsl(var(--primary))' },
+					'50%': { textShadow: '0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary)), 0 0 15px hsl(var(--primary))' }
+				},
+				'neural-pulse': {
+					'0%, 100%': { opacity: '0.3', transform: 'scale(1)' },
+					'50%': { opacity: '1', transform: 'scale(1.1)' }
+				},
+				'slide-in-left': {
+					'0%': { transform: 'translateX(-100px)', opacity: '0' },
+					'100%': { transform: 'translateX(0)', opacity: '1' }
+				},
+				'slide-in-right': {
+					'0%': { transform: 'translateX(100px)', opacity: '0' },
+					'100%': { transform: 'translateX(0)', opacity: '1' }
+				},
+				'fade-in-up': {
+					'0%': { transform: 'translateY(50px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				float: 'float 6s ease-in-out infinite',
+				glow: 'glow 2s ease-in-out infinite alternate',
+				'pulse-neon': 'pulse-neon 2s ease-in-out infinite',
+				'neural-pulse': 'neural-pulse 3s ease-in-out infinite',
+				'slide-in-left': 'slide-in-left 0.8s ease-out forwards',
+				'slide-in-right': 'slide-in-right 0.8s ease-out forwards',
+				'fade-in-up': 'fade-in-up 0.8s ease-out forwards'
 			}
 		}
 	},
