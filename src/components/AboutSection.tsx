@@ -20,8 +20,8 @@ const AboutSection = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-fade-in-up">
+        <div className="text-center mb-8">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-fade-in-up">
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in-up">
@@ -29,7 +29,7 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
           {/* Left Column - Personal Info */}
           <div className="animate-slide-in-left">
             <div className="glassmorphism p-8 rounded-xl glow-border">

@@ -45,6 +45,15 @@ const HeroSection = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/7c1807b8-7a8a-4cce-8e7e-5b6e02547160.png';
+    link.download = 'Meenit_Doshi_Resume.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Floating Geometric Shapes */}
@@ -119,6 +128,7 @@ const HeroSection = () => {
               View Projects
             </Button>
             <Button 
+              onClick={downloadResume}
               variant="outline" 
               className="subtle-border hover-lift px-8 py-3"
             >
