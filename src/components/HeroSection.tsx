@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Download, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const HeroSection = () => {
   const [typingText, setTypingText] = useState('');
@@ -59,11 +60,16 @@ const HeroSection = () => {
           {/* Profile Image */}
           <div className="mb-8 animate-fade-in-up">
             <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-primary to-secondary p-1 animate-soft-glow">
-              <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
-                <div className="w-44 h-44 rounded-full bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-6xl font-bold text-primary">
+              <Avatar className="w-full h-full">
+                <AvatarImage 
+                  src="/lovable-uploads/f8f4af2f-2a6b-4438-92e7-876f193e8674.png" 
+                  alt="Meenit Doshi" 
+                  className="object-cover"
+                />
+                <AvatarFallback className="w-full h-full bg-gradient-to-br from-primary/10 to-secondary/10 text-6xl font-bold text-primary">
                   MD
-                </div>
-              </div>
+                </AvatarFallback>
+              </Avatar>
             </div>
           </div>
 
