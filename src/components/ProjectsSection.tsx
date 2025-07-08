@@ -1,8 +1,8 @@
+
 import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Github, ExternalLink, Star } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 const ProjectsSection = () => {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -16,9 +16,7 @@ const ProjectsSection = () => {
       description: 'Advanced ML model using TensorFlow and OpenCV to detect emotions from images and live video feeds with 95%+ accuracy',
       technologies: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'MediaPipe', 'Flask'],
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475',
-      features: ['Multi-face detection', 'Real-time processing', 'Emotion probability scores', 'Data visualization'],
-      github: '#',
-      demo: '#'
+      features: ['Multi-face detection', 'Real-time processing', 'Emotion probability scores', 'Data visualization']
     },
     {
       id: 2,
@@ -28,9 +26,7 @@ const ProjectsSection = () => {
       description: 'Deep learning model to classify American Sign Language gestures with 92% accuracy and real-time hand gesture to text conversion',
       technologies: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'MediaPipe', 'Flask'],
       image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5',
-      features: ['Real-time gesture recognition', 'Hand tracking', 'Text conversion', 'Learning mode'],
-      github: '#',
-      demo: '#'
+      features: ['Real-time gesture recognition', 'Hand tracking', 'Text conversion', 'Learning mode']
     },
     {
       id: 3,
@@ -40,9 +36,7 @@ const ProjectsSection = () => {
       description: 'LSTM neural network predicting stock prices with technical indicators and interactive web dashboard',
       technologies: ['Python', 'TensorFlow', 'Pandas', 'Scikit-learn', 'Flask', 'Chart.js'],
       image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7',
-      features: ['LSTM predictions', 'Technical analysis', 'Risk assessment', 'Real-time data'],
-      github: '#',
-      demo: '#'
+      features: ['LSTM predictions', 'Technical analysis', 'Risk assessment', 'Real-time data']
     },
     {
       id: 4,
@@ -52,9 +46,7 @@ const ProjectsSection = () => {
       description: 'Full-stack Android application for online medicine ordering with inventory management and payment integration',
       technologies: ['Flutter', 'Dart', 'Android Studio', 'Firebase', 'XML'],
       image: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b',
-      features: ['Order tracking', 'Prescription upload', 'Payment gateway', 'Admin panel'],
-      github: '#',
-      demo: '#'
+      features: ['Order tracking', 'Prescription upload', 'Payment gateway', 'Admin panel']
     },
     {
       id: 5,
@@ -64,9 +56,7 @@ const ProjectsSection = () => {
       description: 'Centralized IoT control system for smart home devices with real-time monitoring and automated control',
       technologies: ['Python', 'Flask', 'SQLite', 'JavaScript', 'Chart.js', 'Raspberry Pi'],
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
-      features: ['Device control', 'Energy monitoring', 'Automation rules', 'Mobile responsive'],
-      github: '#',
-      demo: '#'
+      features: ['Device control', 'Energy monitoring', 'Automation rules', 'Mobile responsive']
     },
     {
       id: 6,
@@ -76,9 +66,7 @@ const ProjectsSection = () => {
       description: 'RESTful API for real-time object detection and counting using YOLO with batch processing capabilities',
       technologies: ['Python', 'YOLO', 'OpenCV', 'Flask', 'Docker', 'REST API'],
       image: 'https://images.unsplash.com/photo-1470813740244-df37b8c1edcb',
-      features: ['Real-time detection', 'Batch processing', 'Custom training', 'RESTful API'],
-      github: '#',
-      demo: '#'
+      features: ['Real-time detection', 'Batch processing', 'Custom training', 'RESTful API']
     }
   ];
 
@@ -164,17 +152,6 @@ const ProjectsSection = () => {
                         )}
                       </div>
                     </div>
-                    
-                    <div className="flex gap-3">
-                      <Button variant="outline" size="sm" className="flex-1 glow-border hover-glow">
-                        <Github className="w-4 h-4 mr-2" />
-                        Code
-                      </Button>
-                      <Button size="sm" className="flex-1 gradient-primary text-primary-foreground">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Demo
-                      </Button>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -186,15 +163,17 @@ const ProjectsSection = () => {
         <div className="flex justify-center mb-12 animate-fade-in-up">
           <div className="flex flex-wrap gap-3 bg-muted/10 p-2 rounded-lg">
             {categories.map((category) => (
-              <Button
+              <button
                 key={category}
-                variant={activeFilter === category ? "default" : "outline"}
-                size="sm"
                 onClick={() => setActiveFilter(category)}
-                className={activeFilter === category ? "gradient-primary text-primary-foreground" : "glow-border hover-glow"}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                  activeFilter === category
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/20'
+                }`}
               >
                 {category}
-              </Button>
+              </button>
             ))}
           </div>
         </div>
@@ -242,17 +221,6 @@ const ProjectsSection = () => {
                         </Badge>
                       )}
                     </div>
-                  </div>
-                  
-                  <div className="flex gap-2">
-                    <Button variant="outline" size="sm" className="flex-1 text-xs glow-border hover-glow">
-                      <Github className="w-3 h-3 mr-1" />
-                      Code
-                    </Button>
-                    <Button size="sm" className="flex-1 text-xs gradient-primary text-primary-foreground">
-                      <ExternalLink className="w-3 h-3 mr-1" />
-                      Demo
-                    </Button>
                   </div>
                 </div>
               </CardContent>
